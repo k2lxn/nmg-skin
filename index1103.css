@@ -1,0 +1,261 @@
+/* TYPOGRAPHY */
+
+@font-face {
+  font-family: 'Sofia Pro Light';
+  src: url('fonts/sofiapro_light_macroman/SofiaProLight-webfont.eot');
+  src: url('fonts/sofiapro_light_macroman/SofiaProLight-webfont.woff2') format('woff2'),
+       url('fonts/sofiapro_light_macroman/SofiaProLight-webfont.woff') format('woff'),
+       url('fonts/sofiapro_light_macroman/SofiaProLight-webfont.ttf') format('truetype');
+}
+@import url('//fonts.googleapis.com/css?family=Lato:400,700');
+@import url('//fonts.googleapis.com/css?family=Quicksand:300,400');
+
+body {
+  font-family: Lato, sans-serif;
+}
+
+.phone_number {
+  font-family: 'Sofia Pro Light', Quicksand, sans-serif;
+  font-size: 1.88em;   /* about 30px in Chrome */
+  color: #606060;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+nav li a {
+ font-size: .9em;  /* about 16px in Chrome?? */
+}
+
+.button_style {
+  background-color: #1575e7;
+  color: #FFF;
+  padding: 15px 25px;
+  -webkit-border-radius: 27px;
+  -moz-border-radius: 27px;
+  border-radius: 27px;
+}
+
+#hero_button {
+  font-size: 1.25em;  /* about 20px in Chrome */
+}
+
+#hero_blurb {
+  font-size: 1.5em;  /* about 24px in Chrome */
+  line-height: 1.6;
+  text-align: center;
+}
+
+/* LAYOUT */
+
+html, body, div, nav, p, a {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+.center_wrap {
+  width: 90%;
+  min-width: 630px;
+  max-width: 1280px;
+  margin: 0 auto;
+  position: relative;
+}
+
+nav {
+  position: fixed;
+  height: 45px;
+  z-index: 10;
+  
+  /*background-color: #AAA;*/ /* header starts with transparent bg */
+}
+
+nav img {
+  width: 150px;
+  display: inline-block;
+  visibility: hidden; /* header logo starts invisible */
+  margin-top: 5px;  
+}
+
+nav ul {
+  /*width: 300px;*/
+  height: 20px;
+  display: inline-block;
+  position: absolute;
+  right: 0; top: 0; bottom: 0;
+  margin: auto 0;
+  list-style: none;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-left: 50px;
+}
+
+#menu_icon {
+  display: none;
+  text-decoration: none;
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  right: 0;
+  margin: 10px 10px 5px;
+  background: url("img/menu_icon.png") no-repeat;
+  background-size: contain;
+}
+
+section {
+  min-height: 370px;
+  border-bottom: 3px solid #DDD;
+}
+
+.col-2 {
+  width: 50%;
+  min-height: 370px;
+  position: relative;
+  display: inline-block;
+  overflow: visible;
+}
+
+#home .col-2 {
+  height: 100%;
+  padding-top: 45px;
+  position: absolute;
+}
+
+#home .col-2:last-of-type {
+  right: 0;
+}
+
+#hero_logo {
+  width: 600px;
+  /*margin-bottom: 20px;*/
+  margin: 0;
+  display: block;
+  
+  background-color: #CCC;
+}
+
+#hero_button {
+  width: 190px;
+  position: absolute;
+  left:0;right:0;
+  margin: 0 auto;
+  bottom: 10px;
+  display: block;
+}
+
+#hero_phone {
+  text-align: right;
+  margin-top: 15px;
+  display: block;
+}
+
+#hero_blurb { 
+  position: absolute;
+  bottom: 0;
+  display: block;
+}
+
+
+
+/* MEDIA QUERIES */
+
+/* Phones, portrait */ 
+@media only screen and (max-width: 415px){
+
+  /* TYPOGRAPHY */
+  .phone_number {
+    font-size: 1.25em;
+  }  
+  
+  #hero_button {
+    font-size: 1em;
+  }
+  
+  #hero_blurb {
+    font-size: 1em;  /* about 24px in Chrome */
+    line-height: 1.6;
+  }
+  
+  
+  /* LAYOUT */
+  .center_wrap {
+    min-width: 320px;
+  }
+  
+  #menu_icon {
+    display: inline-block;
+  }
+  
+  nav ul {
+    width: 33%;
+    height: fit-content;
+    display: none;
+    position: absolute;
+    right: 0; 
+    top: 40px;
+    margin: 0;
+    padding: 0;
+    
+    background-color: #DDD;
+  }
+  
+  nav:hover ul {   /* DEV ONLY -- use jQuery for deployment */
+    display: inline-block;
+  }
+  
+  nav ul li {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    text-align: center;
+    border-bottom: 1px solid #DDD;
+  }
+  
+  .col-2 {
+    width: 100%;
+    min-height: auto;
+    margin-bottom: 20px;
+  }
+
+  #home .col-2 {   /* stack up Home columns */
+    position: relative;
+    text-align: center;
+  }
+  
+  #hero_button, #hero_blurb {
+    position: relative;
+  } 
+  
+  #hero_logo {
+    width: 100%;
+    margin: 0 auto 25px;
+  }
+  
+  #hero_phone {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    text-align: left;
+    margin: 0;
+   } 
+
+  .button_style {
+    padding: 11px 18px; 
+  }
+}
+
+
+
+
+
+
+

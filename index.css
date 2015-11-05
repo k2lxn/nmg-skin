@@ -1,0 +1,116 @@
+/* TYPOGRAPHY */
+
+@font-face {
+  font-family: 'Sofia Pro Light';
+  src: url('fonts/sofiapro_light_macroman/SofiaProLight-webfont.eot');
+  src: url('fonts/sofiapro_light_macroman/SofiaProLight-webfont.woff2') format('woff2'),
+       url('fonts/sofiapro_light_macroman/SofiaProLight-webfont.woff') format('woff'),
+       url('fonts/sofiapro_light_macroman/SofiaProLight-webfont.ttf') format('truetype');
+}
+@import url('//fonts.googleapis.com/css?family=Lato:400,700');
+@import url('//fonts.googleapis.com/css?family=Quicksand:300,400');
+
+body {
+  font-family: Lato, sans-serif;
+}
+
+.phone_number {
+  font-family: 'Sofia Pro Light', Quicksand, sans-serif;
+  font-size: 30px;
+  color: #606060;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+.button_style {
+  background-color: #1575e7;
+  color: #FFF;
+  padding: 15px 25px;
+  -webkit-border-radius: 27px;
+  -moz-border-radius: 27px;
+  border-radius: 27px;
+}
+
+#hero_button {
+  font-size: 20px;
+}
+
+#hero_blurb {
+  font-size: 24px;
+  line-height: 1.6;
+  text-align: center;
+}
+
+/* LAYOUT */
+
+html, body, nav {
+  width: 100%;
+  margin: 0;
+}
+
+.center_wrap {
+  width: 90%;
+  min-width: 630px;
+  max-width: 1280px;
+  margin: 0 auto;
+  position: relative;
+}
+
+/* header starts with transparent bg? (for hero image placement) */
+
+nav {
+  position: fixed;
+  height: 45px;
+  z-index: 10;
+  
+  background-color: #AAA;
+}
+
+nav img {
+  width: 150px;
+  display: inline-block;
+  /* header logo starts invisible */
+  margin-top: 5px;  
+}
+
+nav ul {
+  /*width: 300px;*/
+  height: 20px;
+  display: inline-block;
+  position: absolute;
+  right: 0; top: 0; bottom: 0;
+  margin: auto 0;
+  list-style: none;
+  
+  /*background-color: #CCC;*/
+}
+
+nav ul li {
+  display: inline-block;
+  margin-left: 20px;
+}
+
+#home {
+  padding-top: 45px;  /* height of nav bar */
+}
+
+
+#hero_logo {
+  width: 600px;
+  margin-bottom: 20px;
+  
+  background-color: #CCC;
+}
+
+.phone_number {
+  float: right;
+}
+
+#hero_button {
+  clear: both;
+}
+
+/* MEDIA QUERIES */
