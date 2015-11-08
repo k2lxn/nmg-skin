@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name='viewport' content='width=device-width,initial-scale=1'>
+	<title>Quote 11/05</title>
+	<link rel="stylesheet" type="text/css" href="apply.css">
+</head>
+
+<body>
+  <nav>
+    <div class='center_wrap'>
+      <a href=#><img src='../img/logo_color.png'></a>
+      <a href="#" id="menu_icon">&nbsp;</a>
+      <ul>
+       <!-- <li><a href=#>Apply</a></li> -->
+        <li><a href=#>Tools</a></li>
+        <li><a href=#>About</a></li>
+      </ul>
+    </div>
+  </nav>
+  
+  <div class="center_wrap">
+  <div class="content_wrap">
+  <h1>Apply for a Free Quote</h1>
+  
+  <form>
+    <fieldset>
+      <header>
+      	<legend>Home information</legend>
+      	<div class="pagination">1/3</div>
+      </header>
+      
+      <div class="row">
+      	<div class="col-2">
+      		<select id="loan_purpose">
+      			<option value="0">Purchase</option>
+      			<option value="1">Refinance</option>
+      		</select>
+      	</div>
+      
+      	<div class="col-2">
+      		<select id="property_type">
+      			<option>Primary residence</option>
+      			<option>Second home</option>
+      			<option>Investment property</option>
+     	 		</select>
+     	 </div>
+      </div>
+      
+      <div class="row">
+      	<div class="col-2">
+      		<label for="home_price">Purchase price</label>
+      		<input type="number" id="home_price" placeholder="$" />
+      	</div>
+      	
+      	<div class="col-2">	
+     	 		<label for="down_payment">Down payment budget</label>
+     	 		<input type="number" id="down_payment" placeholder="$" />
+     	 	</div>	
+      </div>
+      
+      <div class="row">
+      	<div class="col-2">
+     			<label for="loan_zip">Zip code</label>
+      		<input type="text" inputmode="numeric" id="loan_zip" />
+      	</div>
+      	<div class="col-2">
+      		<small>
+        		*Nationwide services are currently available in 
+        		CA, NV, OR, TX and WA
+      		</small>
+      	</div>
+      </div>
+    </fieldset>
+    
+    
+    <fieldset>
+    	<header>
+    		<legend>Borrower information</legend>
+    		<div class="pagination">2/3</div>
+    	</header>
+    	
+    	<div class="row">
+    		<div class="col-1">
+    			<fieldset>
+    				<legend>Name</legend>    		
+    				<input type="text" placeholder="First" />
+    				<input type="text" placeholder="M.I." />
+    				<input type="text" placeholder="Last" />   		
+    			</fieldset>
+    		</div>	
+    	</div>
+    	
+    	<div class="row">
+    		<div class="col-2">
+    			<fieldset>
+    				<legend>Address</legend>   		
+    				<input type="text" placeholder="Street" />
+    				<input type="text" placeholder="City" />
+    		
+    				<div class="row">
+    					<div class="col-2">
+    						<select>
+    							<option>State</option>
+    							<option>CA</option>
+    							<option>AL</option>
+    							<option>AZ</option>
+    						</select>
+    					</div>
+    					<div class="col-2">
+    						<input type="text" inputmode="numeric" id="borrower_zip" placeholder="Zip code"/>   		
+							</div>
+						</div> 
+						   			
+    			</fieldset>
+    		</div>
+    	
+    		<div class="col-2">
+    			<label for="credit_score">Credit score</label>
+    			<select id="credit_score">
+    	  		<option>720-760</option>
+    	  		<option>680-720</option>
+    	 		 <option>640-680</option>
+    	 		 <option>600-640</option>
+    			</select>
+    	
+    			<label for="phone_contact">Best phone contact</label>
+    			<input type="tel" id="phone_contact" placeholder="555-123-4567" />
+    		</div>
+    	</div>
+    	
+    	<div class="row">
+    		<div class="col-2">
+    			<label for="email">Email address</label>
+    			<input type="email" id="email" placeholder="my_email@example.com" />
+    		</div>
+    	</div>
+    	
+    	<fieldset>
+    		<legend>Optional information to help find you the best rate</legend>
+    	
+    	<div class="row">
+    		<div class="col-2">
+    			<label for="yearly_income">Est. gross yearly income</label>
+      		<input type="text" id="yearly_income" placeholder="$" />
+      	</div>
+      	<div class="col-2">
+      		<label for="monthly_debt">Est. monthly debt payments</label>
+      		<input type="text" id="monthly_debt" placeholder="$" />   	
+      		<small>
+      			Notice: Alimony, child support, or separate maintenance income 
+      			need not be revealed if you do not choose to have it considered 
+      			for repaying this loan. 
+      		</small>
+      	</div>
+      </div>
+      
+      <div class="row">
+      	<div class="col-2">
+     	  	<fieldset>
+     	  		
+								<label for="curr_employer">Current employer</label>
+      					<input type="text" id="curr_employer" />
+      		
+      					<label for="employer_since">Since</label>
+      					<input type="text" id="employer_since" />
+      					<small>
+      						* Self Employed Borrowers may be required to provide additional
+      						documentation such as tax returns and financial statements
+      					</small>
+      			
+     		 </fieldset>
+     	 	</div>
+     	</div> 
+      
+    	</fieldset>
+    
+    </fieldset>
+    
+    
+    <fieldset>
+    	<header>
+    		<legend>Co-Borrower information (optional)</legend>
+    		<div class="pagination">3/3</div>
+    	</header>
+    	
+    	<div class="row">
+    		<div class="col-1">
+    			<fieldset>
+    				<legend>Name</legend>    		
+    				<input type="text" placeholder="First" />
+    				<input type="text" placeholder="M.I." />
+    				<input type="text" placeholder="Last" />   		
+    			</fieldset>
+    		</div>	
+    	</div>
+    	
+    	<div class="row">
+    		<div class="col-2">
+    			<label for="co_credit_score">Credit score</label>
+    			<select id="co_credit_score">
+    	 		 <option>720-760</option>
+    	  		<option>680-720</option>
+    	  		<option>640-680</option>
+    	  		<option>600-640</option>
+    			</select>
+    		</div>
+    	</div>
+    	
+    </fieldset>
+    
+    <div class="row">
+    	<div class="col-1">
+    		<input type="submit" value="Submit" />
+    	</div>
+    </div>		
+     
+  </form>
+  </div>  <!-- close .content_wrap -->
+	</div>  <!-- close .center_wrap -->
+</body>
+
+</html>
