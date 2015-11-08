@@ -69,7 +69,7 @@ nav li a {
 
 /* LAYOUT */
 body {
-  background-color: #D6D6D6;
+  background-color: #EBEBEB;
 }
 
 h1 {
@@ -92,7 +92,7 @@ h1 {
 }
 
 form {
-	width: 90%;
+	width: 80%;
 	min-width: 550px;
 	max-width: 850px;
 	margin: 0 auto;	
@@ -137,6 +137,10 @@ fieldset {
 	border-left: none;
 	border-right: none;
 	border-bottom: 3px dotted #F16404;
+}
+
+fieldset:last-of-type {
+	border-bottom: none;
 }
 
 fieldset fieldset {
@@ -207,7 +211,7 @@ input[type="submit"] {
   /* center Submit button */
 	position: relative;
 	left: 50%;
-	margin: 20px 0 20px -65px;  /* 65px is approx. half width of button */
+	margin: 30px 0 20px -65px;  /* 65px is approx. half width of button */
   background-color: #1575E7;
   padding: 10px 25px 15px;
   -webkit-border-radius: 27px;
@@ -249,7 +253,8 @@ nav {
   margin: 0; 
   padding: 0;
   z-index: 10;
-  background-color: #FFF;
+  background-color: #D6D6D6;
+  border-bottom: 2px solid #FFF;
 }
 
 nav img {
