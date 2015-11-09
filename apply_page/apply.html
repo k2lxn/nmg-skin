@@ -33,6 +33,7 @@
       
       <div class="row">
       	<div class="col-2">
+      	<label for="loan_purpose">Loan purpose</label>
       		<select id="loan_purpose">
       			<option value="0">Purchase</option>
       			<option value="1">Refinance</option>
@@ -40,6 +41,7 @@
       	</div>
       
       	<div class="col-2">
+      		<label for="property_type">Property type</label>
       		<select id="property_type">
       			<option>Primary residence</option>
       			<option>Second home</option>
@@ -164,7 +166,7 @@
       					<input type="text" id="curr_employer" />
       		
       					<label for="employer_since">Since</label>
-      					<input type="text" id="employer_since" />
+      					<input type="text" id="employer_since" placeholder="YYYY"/>
       					<small>
       						* Self Employed Borrowers may be required to provide additional
       						documentation such as tax returns and financial statements
@@ -184,6 +186,20 @@
     		<legend>Co-Borrower information (optional)</legend>
     		<div class="pagination">3/3</div>
     	</header>
+    	
+    	<div class="row">
+    		<div class="col-1">
+    			<fieldset>
+    			<legend>My co-borrower will be ...</legend>
+    				<input type="radio" id="no_co"/>
+    				<label for="no_co">No co-borrower</label>
+    				<input type="radio" id="co_spouse"/>
+    				<label for="co_spouse">spouse</label>
+    				<input type="radio" id="co_other"/>
+    				<label for="co_other">other</label>
+    			</fieldset>
+    		</div>
+    	</div>
     	
     	<div class="row">
     		<div class="col-1">
