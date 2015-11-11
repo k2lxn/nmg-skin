@@ -218,6 +218,7 @@ section {
     margin: 0 auto 0 15.38462%;
     display: inline-block;
     vertical-align: top;
+    text-align: left;
     padding: 0;
     list-style: circle inside;
     /*background: $light-grey;*/ }
@@ -240,23 +241,21 @@ section {
 
 .sidebar {
   width: 39.23077%;
-  display: inline-block;
-  /*background: #FFF;*/ }
+  display: inline-block; }
   .sidebar img {
     width: 110px;
     position: relative;
-    left: 100%;
-    margin-left: -55px;
+    left: 50%;
+    /*margin-left: -55px;*/
     /*max-width: 160px;
-    max-height: 103px;*/
-    /*background: #CCC*/ }
+    max-height: 103px;*/ }
   .sidebar aside {
-    width: 210px;
+    width: 200px;
     display: block;
     position: relative;
-    left: 100%;
-    margin-left: -105px;
-    /*background: #CCC;*/ }
+    left: 50%;
+    text-align: left;
+    /*margin-left: -105px;*/}
 
 /* MEDIA QUERIES */
 /* Phones, portrait */
