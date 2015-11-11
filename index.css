@@ -23,7 +23,7 @@ nav li a {
   /* about 16px in Chrome?? */
   color: #555; }
 
-#hero_button {
+.button_style {
   font-size: 1.25em;
   /* about 20px in Chrome */ }
 

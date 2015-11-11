@@ -279,6 +279,10 @@ input[type=radio] {
 	background-color: #F423E3;
 }
 
+:root input[type=radio]:focus + label:before {
+	box-shadow: inset 0px 2px 3px 0px rgba(0, 0, 0, .5), 0 0 3px 1px #227755;
+}
+
 input[type=radio] + label {
 	float: left;
 	width: 30%;
@@ -300,6 +304,54 @@ select {
   border-radius: 27px;
 }
 
+
+.select {
+	position: relative;
+	display: inline-block;
+	padding: 15px 45px 15px 25px;
+	
+	-webkit-border-radius: 27px;
+  -moz-border-radius: 27px;
+  border-radius: 27px;
+	
+	font-size: 1em;  /* 18px */
+	color: #FFF;
+	
+	background-color: #03CB69;
+	background-image: linear-gradient(to right, rgba(255,255,255,0), rgba(255,255,255,0) 75%, #1575E3 75%, #1575E3 );
+}
+
+.select.active, 
+.select:focus {
+	outline: none;
+	box-shadow: 0 0 3px 1px #227755;
+}
+
+.select .opt_list {
+	position: absolute;
+	top: 100%;
+	left: 0;
+	
+	font-size: 1em;
+	color: #000;
+	
+	background: #FFF;
+}
+
+.select .opt_list.hidden {
+	/* Hide list while maintaining accessibility */
+	max-height: 0;
+	visibility: hidden;
+}
+
+.select .value {
+	display: inline-block;
+	width: 100%;
+	overflow: hidden;  /* in case selected value is wider than .select container */
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	vertical-align: top;
+}
 
 
 /* Nav */

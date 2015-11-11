@@ -117,6 +117,65 @@
         
       </div>   <!-- close .pitch -->
       
+      <a class="button_style" href="#">Get your quote</a>
+      
+    </section>  <!-- Tools & Resources --> 
+    
+    
+    <section id="tools">
+    	<h2>Tools & Resources</h2>
+    
+    	<div class='blurb'>
+        <p>
+          Use our mortgage calculators to find out how much you can afford
+					or how much you could save by changing the terms of your loan
+        </p>  
+			</div>   
+			
+			<form class="calculator">
+				<legend>How Much Can I Borrow?</legend>
+				<div class="calc_inputs">
+					<label for="monthly_income">Gross monthly income</label>
+					<input type="text" id="monthly_income"/>
+					
+					<label for="monthly_debt">Gross monthly income</label>
+					<input type="text" id="monthly_debt"/>
+					
+					<fieldgroup>
+						<legend>Desired Loan Terms</legend>
+						
+						<label for="interest_rate"></label>
+						<div class="slider"></div>
+						<input type="text" id="interest_rate" placeholder="4.25%"/>
+						
+						<label for="loan_term">Term</label>
+						<select id="loan_term">  <!-- empty select tag for form labe??? -->
+						</select>
+						
+						<div class="select">
+    					<span class="value">15yr</span>   <!-- displays current value -->
+    					<ul class="opt_list">
+    						<li class="option">15yr</li>
+    						<li class="option">30yr</li>
+    					</ul>
+    				</div>  <!-- close .select -->
+    			
+    				<label for="down_payment"></label>
+						<div class="slider"></div>
+						<input type="text" id="down_payment" placeholder="15%"/>
+						
+					</fieldgroup>
+				</div>  <!-- close .calc_inputs--> 
+				
+				<div class="calc_outputs">
+					<label for="home_price">Home price</label>
+					<output id="home_price" placeholder="holding" />
+					<label for="loan_amount">Loan amount</label>
+					<output id="loan_amount" placeholder="holding"/>
+					<label for="monthly_payment">Monthly Principle + Interest</label>
+					<output id="monthly_payment" placeholder="holding"/>
+				</div>
+			</form>         
     </section>
   
   </div> <!-- closes .center_wrap -->

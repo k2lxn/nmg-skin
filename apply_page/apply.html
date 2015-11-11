@@ -87,9 +87,9 @@
     		<div class="col-1">
     			<fieldset>
     				<legend>Name</legend>    		
-    				<input type="text" placeholder="First" />
-    				<input type="text" placeholder="M.I." />
-    				<input type="text" placeholder="Last" />   		
+    				<input type="text" aria-label="First" placeholder="First" />
+    				<input type="text" aria-label="Middle initial" placeholder="M.I." />
+    				<input type="text" aria-label="Last" placeholder="Last" />   		
     			</fieldset>
     		</div>	
     	</div>
@@ -98,12 +98,12 @@
     		<div class="col-2">
     			<fieldset>
     				<legend>Address</legend>   		
-    				<input type="text" placeholder="Street" />
-    				<input type="text" placeholder="City" />
+    				<input type="text" aria-label="Street Line 1" placeholder="Street" />
+    				<input type="text" aria-label="City" placeholder="City" />
     		
     				<div class="row">
     					<div class="col-2">
-    						<select>
+    						<select aria-label="State">
     							<option>State</option>
     							<option>CA</option>
     							<option>AL</option>
@@ -111,7 +111,7 @@
     						</select>
     					</div>
     					<div class="col-2">
-    						<input type="text" inputmode="numeric" id="borrower_zip" placeholder="Zip code"/>   		
+    						<input type="text" inputmode="numeric" id="borrower_zip" aria-label="Zip code" placeholder="Zip code"/>   		
 							</div>
 						</div> 
 						   			
@@ -191,11 +191,11 @@
     		<div class="col-1">
     			<fieldset>
     			<legend>My co-borrower will be ...</legend>
-    				<input type="radio" id="no_co" checked />
+    				<input type="radio" name="co_opt" id="no_co" checked />
     				<label for="no_co">No co-borrower</label>
-    				<input type="radio" id="co_spouse"/>
+    				<input type="radio" name="co_opt" id="co_spouse"/>
     				<label for="co_spouse">spouse</label>
-    				<input type="radio" id="co_other"/>
+    				<input type="radio" name="co_opt" id="co_other"/>
     				<label for="co_other">other</label>
     			</fieldset>
     		</div>
@@ -205,22 +205,33 @@
     		<div class="col-1">
     			<fieldset>
     				<legend>Name</legend>    		
-    				<input type="text" placeholder="First" />
-    				<input type="text" placeholder="M.I." />
-    				<input type="text" placeholder="Last" />   		
+    				<input type="text" aria-label="First" placeholder="First" />
+    				<input type="text" aria-label="Middle initial" placeholder="M.I." />
+    				<input type="text" aria-label="Last" placeholder="Last" />   		
     			</fieldset>
     		</div>	
     	</div>
     	
     	<div class="row">
     		<div class="col-2">
-    			<label for="co_credit_score">Credit score</label>
+    			<!-- <label for="co_credit_score">Credit score</label>
     			<select id="co_credit_score">
     	 		 <option>720-760</option>
     	  		<option>680-720</option>
     	  		<option>640-680</option>
-    	  		<option>600-640</option>
-    			</select>
+    	  		<option>600-640</option> 
+    			</select> -->
+    			
+    			<div class="select">
+    				<span class="value">720 - 760</span>   <!-- displays current value -->
+    				<ul class="opt_list">
+    					<li class="option">720 - 760</li>
+    					<li class="option">680 - 720</li>
+    					<li class="option">640 - 680</li>
+    					<li class="option">600 - 640</li>
+    				</ul>
+    			</div>  <!-- close .select -->
+    			
     		</div>
     	</div>
     	
