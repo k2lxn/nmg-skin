@@ -79,6 +79,7 @@ p {
   width: 90%;
   min-width: 630px;
   max-width: 1010px;
+  height: max-content;
   margin: 0 auto;
   padding: 0;
   position: relative;
@@ -125,7 +126,10 @@ nav ul li {
   background-size: contain; }
 
 section {
-  border-bottom: 3px solid #CCC; }
+	position: relative;
+	text-align: center;
+  border-bottom: 3px solid #CCC; 
+}
 
 .col-2 {
   width: 50%;
@@ -157,12 +161,19 @@ section {
   margin: 0 auto; }
 
 .button_style {
-  background-color: #1575e7;
+  width: fit-content;
+  display: inline-block;
+  margin: 0 auto;
+  background-color: #03CB69;
   color: #FFF;
   padding: 15px 25px;
   -webkit-border-radius: 27px;
   -moz-border-radius: 27px;
   border-radius: 27px; }
+  
+#home .button_style {
+	background-color: #1575e7;
+}  
 
 #hero_phone {
   text-align: right;
@@ -178,11 +189,11 @@ section {
   border-bottom: none; }
 
 .icon {
-  width: 180px;
+  width: 30%;
   height: 100%;
   display: inline-block;
   position: absolute;
-  /*background: green;*/ }
+  left: 0; }
 
 .icon img {
   max-width: 180px;
